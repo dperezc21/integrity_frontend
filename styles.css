@@ -21,21 +21,24 @@ label{
     border-left-style: solid;
     border-width: 1px;
     border-color: rgb(161, 238, 161);
-    margin-top: 10px;
+    margin-top: 5px;
     border-radius: 10px;
     width: 450px;
-    height: 50px;
+    height: 30px;
     padding-left: 30px;
-    padding-bottom: 50px;
+    padding-bottom: 70px;
 }
 
 .stock div{
     display: inline;
-    padding-right: 30px;
+    padding-right: 20px;
+    margin-right: 10px;
     align-items: center;
-    border-left-style: groove ;
+    border-right-style: groove ;
+    border-color: #87ECF9;
     border-width: 1px;
     padding-left: 5px;
+    padding-top: 10px;
 
 }
 
@@ -45,17 +48,16 @@ label{
     border-color: aliceblue;
 }
 
+
 #buttonAdd{
     background-color: rgb(166, 234, 229);
     border-color: rgb(200, 224, 245);
     font-size: medium;
     padding: 5px 30px;
+    border-radius: 5px;
+    
 }
 
-img{
-    text-align: center;
-    padding-right: 5px;
-}
 
 .label{
     text-align: center;

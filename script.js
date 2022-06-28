@@ -61,6 +61,7 @@ async function addStocksView() {
         const buttonDeleteStock = document.createElement('button');
         const buttonUpdateStock = document.createElement('button');
 
+        logo.id = "logo"
         price.className = "label"
         nameCompany.className="label"
 
@@ -73,17 +74,17 @@ async function addStocksView() {
         logo.setAttribute('src', iterator.url);
         nameCompany.innerHTML = iterator.companyName
         price.innerHTML = iterator.latestPrice
-
+        let arrow = document.createElement("IMG")
         if (iterator.statePrice == "-") {
             price.style.color = "red"
+            arrow.setAttribute("src", './img/chevron.png')
         } else if (iterator.statePrice == "+") {
             price.style.color = rgb(5, 139, 5);
-        } else {
-            price.style.color = "green"
+            arrow.setAttribute("src", './img/up-arrow.png')
         }
 
-        logo.setAttribute('width', '70')
-        logo.setAttribute('height', '70')
+        logo.setAttribute('width', '65')
+        logo.setAttribute('height', '65')
 
         const d = document.createElement("IMG");
         const u = document.createElement("IMG");
@@ -105,6 +106,7 @@ async function addStocksView() {
         div.appendChild(divNameCompany)
 
         divPrice.appendChild(price)
+        divPrice.appendChild(arrow);
         div.appendChild(divPrice)
 
         divButton.appendChild(buttonDeleteStock)
